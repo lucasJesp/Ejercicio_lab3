@@ -78,8 +78,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 // Procesamos los datos a renderizar
                 textViewName.setText(fruta.getName());
                 textViewDescription.setText(fruta.getDescription());
-                Picasso.with(context).load(fruta.getImgIcon()).fit().into(imageViewBackground);
-                // imageViewPoster.setImageResource(movie.getPoster());
+                Picasso.with(context).load(fruta.getImgBackground()).fit().into(imageViewBackground);
+                // imageViewBackground.setImageResource(fruta.getImgBackground());
                 // Definimos que por cada elemento de nuestro recycler view, tenemos un click listener
                 // que se comporta de la siguiente manera...
                 itemView.setOnClickListener(new View.OnClickListener() {
